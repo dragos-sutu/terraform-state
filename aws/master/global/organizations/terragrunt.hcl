@@ -10,7 +10,7 @@ inputs = {
   accounts = [
     {
       email               = get_env("AWS_ORG_IDENTITY_EMAIL", "")
-      name                = "sso"
+      name                = "identity"
       organizational_unit = "Identity"
     },
     {
