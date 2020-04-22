@@ -1,0 +1,3 @@
+inputs = {
+  region = "nyc3"
+}
