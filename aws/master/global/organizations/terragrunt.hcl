@@ -7,21 +7,15 @@ terraform {
 }
 
 inputs = {
-  accounts = [
-    {
-      email               = get_env("AWS_ORG_IDENTITY_EMAIL", "")
-      name                = "identity"
-      organizational_unit = "Identity"
-    },
-    {
-      email               = get_env("AWS_ORG_NONPROD_EMAIL", "")
-      name                = "non-prod"
-      organizational_unit = "Non production"
-    },
-  ]
+  account_identity = {
+    email               = ""
+    name                = "identity"
+    organizational_unit = "SRE"
+  }
 
-  organizational_units = [
-    "Identity",
-    "Non production",
-  ]
+  account_dev = {
+    email               = ""
+    name                = "dev"
+    organizational_unit = "Developers"
+  }
 }
