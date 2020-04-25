@@ -13,9 +13,9 @@ inputs = {
     organizational_unit = "SRE"
   }
 
-  account_dev = {
+  account_non_prod = {
     email               = ""
-    name                = "dev"
+    name                = "non-prod"
     organizational_unit = "Developers"
   }
 }
